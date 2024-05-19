@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="fill_horizontal|fill_vertical"
+    tools:context=".ui.fragments.MovieDetailsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="84dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/movieImage"
+            android:text="Hallo My Name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/movieType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieTitle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/movieImage"
+            android:drawableLeft="@drawable/baseline_movie_filter_24"
+            android:text=" Genre (Action, Sport, Romantic)"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieType"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/movieImage"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/baseline_star_24"
+            android:text=" Rating (8.7)"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/movieDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieRating"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/movieImage"
+            android:drawableLeft="@drawable/baseline_access_time_24"
+            android:text=" Duration (60 min)"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/movieReleased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieDuration"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/movieImage"
+            android:drawableLeft="@drawable/baseline_calendar_today_24"
+            android:text=" Released (14 Nov 2019)"
+            android:layout_marginRight="10dp"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/separatorIntroPlot"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@id/movieReleased"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal" />
+        <TextView
+            android:id="@+id/moviePlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separatorIntroPlot"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="In Jumanji: The Next Level, the gang is back but the game has changed. As they return to rescue one of their own, the players will have to brave parts unknown from arid deserts to snowy mountains, to escape the world's most dangerous game."
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/separatorPlotActor"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@id/moviePlot"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/actorsSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separatorPlotActor"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="  Actors"
+            android:drawableLeft="@drawable/baseline_recent_actors_24"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/movieActors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actorsSection"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:text="Dwayne Johnson, Jack Black, Kevin Hart"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/separatorActorDirector"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@id/movieActors"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/directorsSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separatorActorDirector"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="  Directors"
+            android:drawableLeft="@drawable/baseline_diversity_3_24"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/movieDirectors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/directorsSection"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:text="Jake Kasdan"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/separatorDirectorWriter"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@id/movieDirectors"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/writersSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separatorDirectorWriter"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="  Writers"
+            android:drawableLeft="@drawable/baseline_border_color_24"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/movieWriters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/writersSection"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:text="Jake Kasdan, Jeff Pinkner, Scott Rosenberg"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieWriters"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#CA0000"
+            android:text="Remove"
+            android:textColor="#FAF8F8"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnAddWatchlater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieWriters"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="14sp"
+            android:text="Add to watchlater" />
+        <Button
+            android:id="@+id/btnAddToList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAddWatchlater"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="14sp"
+            android:text="Add to watch list" />
+
+    </RelativeLayout>
+
+</FrameLayout>

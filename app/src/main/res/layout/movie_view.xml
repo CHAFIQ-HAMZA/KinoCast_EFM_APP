@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/movieImage"
+        android:layout_marginRight="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieName"
+        android:layout_toEndOf="@id/movieImage"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:text="Jumanji: The Next Level"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieDuration"
+        android:layout_toEndOf="@id/movieReleased"
+        android:layout_below="@+id/movieType"
+        android:textColor="@color/black"
+        tools:text=" 123 min"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/baseline_access_time_24"
+        />
+
+    <TextView
+        android:id="@+id/movieType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieName"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/movieImage"
+        android:textColor="#6750A3"
+        android:textStyle="bold"
+        tools:text=" Action, Adventure, Comedy" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieRating"
+        android:layout_toEndOf="@id/movieImage"
+        android:layout_below="@+id/movieType"
+        android:textColor="@color/black"
+        tools:text=" 8.7"
+        android:drawableLeft="@drawable/baseline_star_24"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieReleased"
+        android:layout_toEndOf="@id/movieRating"
+        android:layout_below="@+id/movieType"
+        android:textColor="@color/black"
+        tools:text=" 13 Dec 2019"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/movieReleased"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KinoCast</string>
+    <string name="enterUsername">Enter username</string>
+    <string name="enterEmail">Enter email</string>
+    <string name="enterPassword">Enter password</string>
+    <string name="loginBtn">Log in</string>
+    <string name="registerBtn">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recomended">Recomended</string>
+    <string name="watchLater">Watch Later</string>
+    <string name="playlists">Playlists</string>
+    <string name="logout">Log Out</string>
+    <string name="createAccount">Create an account</string>
+    <string name="haveAlreadyAccount">I have already an account</string>
+    <string name="waitForLoading">Wait for loading ...</string>
+    <string name="watch">watch later</string>
+    <string name="searchFilm">Search Film</string>
+    <string name="searchMovieByName">Enter movie name</string>
+    <string name="searchMovie">Search</string>
+</resources>

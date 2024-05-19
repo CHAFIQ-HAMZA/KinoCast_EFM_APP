@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/recomendedFragment">
+
+    <fragment android:id="@+id/placeholder" >
+        <action
+            android:id="@+id/action_placeholder_to_recomendedFragment"
+            app:destination="@id/recomendedFragment" />
+        <action
+            android:id="@+id/action_placeholder_to_playlistsFragment"
+            app:destination="@id/playlistsFragment" />
+        <action
+            android:id="@+id/action_placeholder_to_watchLaterFragment"
+            app:destination="@id/watchLaterFragment" />
+        <action
+            android:id="@+id/action_placeholder_to_logOutFragment"
+            app:destination="@id/logOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recomendedFragment"
+        android:name="com.example.kinocastefm_app.ui.fragments.RecomendedFragment"
+        android:label="fragment_recomended"
+        tools:layout="@layout/fragment_recomended" >
+        <action
+            android:id="@+id/action_recomendedFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.kinocastefm_app.ui.fragments.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <argument
+            android:name="MovieModel"
+            app:argType="com.example.kinocastefm_app.models.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistsFragment"
+        android:name="com.example.kinocastefm_app.ui.fragments.PlaylistsFragment"
+        android:label="fragment_playlists"
+        tools:layout="@layout/fragment_playlists" >
+        <action
+            android:id="@+id/action_playlistsFragment_to_playlistDetailsFragment"
+            app:destination="@id/playlistDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchLaterFragment"
+        android:name="com.example.kinocastefm_app.ui.fragments.WatchLaterFragment"
+        android:label="fragment_watch_later"
+        tools:layout="@layout/fragment_watch_later" >
+        <action
+            android:id="@+id/action_watchLaterFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logOutFragment"
+        android:name="com.example.kinocastefm_app.ui.fragments.LogOutFragment"
+        android:label="fragment_log_out"
+        tools:layout="@layout/fragment_log_out" />
+    <fragment
+        android:id="@+id/playlistDetailsFragment"
+        android:name="com.example.kinocastefm_app.ui.fragments.PlaylistDetailsFragment"
+        android:label="fragment_playlist_details"
+        tools:layout="@layout/fragment_playlist_details" >
+        <action
+            android:id="@+id/action_playlistDetailsFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+</navigation>

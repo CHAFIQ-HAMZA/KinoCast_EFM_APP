@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recomendedFragment"
+        android:icon="@drawable/baseline_saved_search_24"
+        android:title="@string/searchFilm" />
+    <item
+        android:id="@+id/watchLaterFragment"
+        android:icon="@drawable/baseline_watch_later_24"
+        android:title="@string/watchLater" />
+    <item
+        android:id="@+id/playlistsFragment"
+        android:icon="@drawable/baseline_playlist_play_24"
+        android:title="@string/playlists" />
+    <item
+        android:id="@+id/logOutFragment"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="@string/logout" />
+</menu>
